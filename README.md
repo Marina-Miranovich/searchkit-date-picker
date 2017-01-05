@@ -1,6 +1,8 @@
 # Searchkit date-picker example
 Just an example how date picker could be implemented with Searchkit and RangeFilter
 
+![](https://cloud.githubusercontent.com/assets/1267541/21667782/a6e4455a-d2b0-11e6-9679-8b694240d415.png)
+
 ## How to run it locally
 * Clone the repo
 * Run `npm install` in project folder

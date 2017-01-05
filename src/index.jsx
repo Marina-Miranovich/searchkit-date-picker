@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import moment from 'moment'
 import { SearchkitManager,
   SearchkitProvider,
   Layout,
@@ -19,13 +20,19 @@ import DateRangeFilter from './DateRangeFilter'
 import { ELASTICSEARCH_URL, SEARCHABLE_FIELD_NAME, DATE_FIELD_NAME } from './variables'
 
 import 'searchkit/release/theme.css'
+import './main.css'
 
 const searchkit = new SearchkitManager(ELASTICSEARCH_URL)
 
 export const HitItem = (props)=> {
-  const { result } = props
+  const { result, bemBlocks } = props
+  const date = moment(result._source[DATE_FIELD_NAME]).format('MMM Do YYYY')
   return (
-    <p>{ result._source[SEARCHABLE_FIELD_NAME] } - { result._source[DATE_FIELD_NAME] }</p>
+    <p className={ bemBlocks.item().mix(bemBlocks.container('item')) }>
+      <span className={ bemBlocks.item('title') }>{ result._source[SEARCHABLE_FIELD_NAME] }</span>
+      <br/>
+      <span>({ date })</span>
+    </p>
   )
 }
 

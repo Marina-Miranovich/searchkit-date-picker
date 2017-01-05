@@ -1,0 +1,9 @@
+.date-filter .sk-input-filter {
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.date-filter .react-datepicker__input-container {
+  width: 100%;
+  padding: 4px 0;
+}

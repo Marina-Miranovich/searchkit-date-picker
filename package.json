@@ -1,0 +1,41 @@
+{
+  "name": "searchkit-date-picker",
+  "version": "1.0.0",
+  "description": "Just an example how date picker could be implemented with Searchkit",
+  "main": "index.jsx",
+  "scripts": {
+    "start": "webpack-dev-server --progress --profile --colors --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marina-Miranovich/searchkit-date-picker.git"
+  },
+  "author": "Marina Miranovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marina-Miranovich/searchkit-date-picker/issues"
+  },
+  "homepage": "https://github.com/Marina-Miranovich/searchkit-date-picker#readme",
+  "dependencies": {
+    "moment": "^2.17.1",
+    "react": "^15.4.1",
+    "react-datepicker": "^0.39.0",
+    "react-dom": "^15.4.1",
+    "searchkit": "^0.10.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "file": "^0.2.2",
+    "file-loader": "^0.9.0",
+    "style-loader": "^0.13.1",
+    "url": "^0.11.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
